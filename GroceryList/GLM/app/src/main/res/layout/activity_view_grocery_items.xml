@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_grocery_items"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/appNameBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:id="@+id/view_grocery_set_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/view_grocery_items_grocery_set_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"/>
+
+        <ListView
+            android:id="@+id/list_view_grocery_items"
+            android:layout_width="wrap_content"
+            android:layout_height="397dp"
+            android:focusable="true"
+            tools:listitem="@android:layout/simple_list_item_checked" />
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/view_grocery_set_list_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/addGroceryItemButton"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/removeGroceryItemButton"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check/Un-Check"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:id="@+id/checkOffGroceryItemButton"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/view_groceries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All Groceries"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_weight="1"
+            android:id="@+id/viewGroceryListButton"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+</LinearLayout>

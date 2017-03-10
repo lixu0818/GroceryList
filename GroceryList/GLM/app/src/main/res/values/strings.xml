@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GLM</string>
+    <string name="add_grocery_set">Add New Grocery</string>
+    <string name="add_grocery_item">Add Grocery Item</string>
+    <string name="view_grocery_set">List Groceries</string>
+    <string name="view_grocery_items">View Grocery Items</string>
+    <string name="toast_add_grocer_set">Please enter a name for new grocery list</string>
+    <string name="view_grocery_name_grocery_items">View items for grocery: %1$s</string>
+    <string name="valid_quantity">Quantity amount should be greater than 0</string>
+    <string name="rename_only_one">Can only rename one grocery at a time</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".view.AddGrocerySetActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rename grocery set"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/appNameBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:id="@+id/rename_grocery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="15"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:id="@+id/newGroceryName"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_below="@+id/rename_grocery_text"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rename"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:id="@+id/renameGroceryButton"
+            android:layout_below="@+id/newGroceryName"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+</LinearLayout>
